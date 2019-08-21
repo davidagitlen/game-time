@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/turingschool-examples/gametime-starter/issues"
   },
-  "homepage": "https://davidagitlen.github.io/game-time",
+  "homepage": "http://davidagitlen.github.io/game-time",
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-spies": "^1.0.0",
