@@ -5,7 +5,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.bundle.js'
+    filename: 'main.bundle.js',
+    publicPath: "my-game-time/build",
   },
   devtool: 'inline-source-map',
   mode: 'development',
