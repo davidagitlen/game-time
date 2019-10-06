@@ -1,85 +1,89 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-  	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/scss" href="../src/css/base.scss">
-    <title>Family Feud, Dude!</title>
-  </head>
-  <body>
-    <div class="winner-page">
-    </div>
-    <div class="game-display">
-      <div class="current-round" id="current-round">
-      </div>
-      <header>
-        <div class="title">
-					<h1>Family Feud</h1>
-        </div>
-      </header>
-      <img class="img__wrong-answer" src="https://ui-ex.com/images/x-transparent-family-feud-5.png">
-      <h3 tabindex="0" id="survey-question"></h3>
-      <section class="section--game-play">
-			  <div class="player" id="player-one">
-					<span tabindex="0"></span>
-					<p tabindex="0" id="player-one-points"></p>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/scss" href="../src/css/base.scss">
+	<title>Family Feud, Dude!</title>
+</head>
+
+<body>
+	<div class="winner-page">
+	</div>
+	<div class="game-display">
+		<div class="current-round" id="current-round">
+		</div>
+		<header>
+			<div class="title">
+				<h1>Family Feud</h1>
+			</div>
+		</header>
+		<img class="img__wrong-answer" src="https://ui-ex.com/images/x-transparent-family-feud-5.png">
+		<h3 tabindex="0" id="survey-question"></h3>
+		<section class="section--game-play">
+			<div class="player" id="player-one">
+				<span tabindex="0"></span>
+				<p tabindex="0" id="player-one-points"></p>
+			</div>
+			<div class="game-board">
+				<div class="scene">
+					<div class="answer-container-1">
+						<article tabindex="0" class="card-face card-front-1 number index-0">1</article>
+						<output id="answer-one" class="card-face card-back-1">
+						</output>
+					</div>
 				</div>
-        <div class="game-board">
-					<div class="scene">
-						<div class="answer-container-1">
-							<article tabindex="0" class="card-face card-front-1 number index-0">1</article>
-							<output id="answer-one" class="card-face card-back-1">
-							</output>
-						</div>
+				<div class="scene">
+					<div class="answer-container-2">
+						<article tabindex="0" class="card-face card-front-2 number index-1">2</article>
+						<output id="answer-two" class="card-face card-back-2">
+						</output>
 					</div>
-					<div class="scene">
-						<div class="answer-container-2">
-							<article tabindex="0" class="card-face card-front-2 number index-1">2</article>
-							<output id="answer-two" class="card-face card-back-2">
-							</output>
-						</div>
-					</div>
-					<div class="scene">
+				</div>
+				<div class="scene">
 					<div class="answer-container-3">
 						<article tabindex="0" class="card-face card-front-3 index-2 number">3</article>
 						<output id="answer-three" class="card-face card-back-3">
 						</output>
 					</div>
-					</div>
 				</div>
-				<div class="player" id="player-two">
-					<span tabindex="0"></span>
-					<p tabindex="0" id="player-two-points"></p>
-				</div>
-      </section>
+			</div>
+			<div class="player" id="player-two">
+				<span tabindex="0"></span>
+				<p tabindex="0" id="player-two-points"></p>
+			</div>
+		</section>
 		<form id="player-answers" autocomplete="off">
 			<fieldset>
 				<label for="player-answer">Answer!</label>
 				<input type="text" id="player-answer" placeholder="Current Answer" autocomplete="off">
 				<input type="submit" for="player-answers" id="guess-button" value="Make Your Guess">
-        <input type="submit" id="end-game-button" value="Quit Game">
+				<input type="submit" id="end-game-button" value="Quit Game">
 			</fieldset>
 		</form>
-    </div>
-    <section class="start-screen">
-      <h2>Welcome to Family Feud!</h2>
-      <p>You will compete against each other to guess the top three most popular survey answers among 100 respondents.</p>
-      <p>Please </b>enter your names and click Start Game.</p>
-      <div class="start-screen--player">
-        <span></span>
-        <label for="player-one-name">Player One</label>
-        <input type="text" id="player-one-name" placeholder="Player 1"> 
-      </div>
-      <div class="start-screen--player">
-        <label for="player-two-name">Player Two</label>
-        <span></span>
-        <input type="text" id="player-two-name" placeholder="Player 2"> 
-      </div>
-      <input type="button" class="start-game-button" id="start-game-button" value="Start Game">
-    </section>
-    <div class="fast-money-intro" id="fast-money-intro">
-    	<h2>Get Ready for the Fast Money Round!</h2>
-    	<p>During the Fast Money Round all point values are multiplied by 5, and you will have 30 seconds to answer as many survey questions as you can. The timer will start as soon as you enter your first answer!</p>
-    </div>
-  <script type="text/javascript" src="game-time/build/main.bundle.js"></script></body>
+	</div>
+	<section class="start-screen">
+		<h2>Welcome to Family Feud!</h2>
+		<p>You will compete against each other to guess the top three most popular survey answers among 100 respondents.</p>
+		<p>Please </b>enter your names and click Start Game.</p>
+		<div class="start-screen--player">
+			<span></span>
+			<label for="player-one-name">Player One</label>
+			<input type="text" id="player-one-name" placeholder="Player 1">
+		</div>
+		<div class="start-screen--player">
+			<label for="player-two-name">Player Two</label>
+			<span></span>
+			<input type="text" id="player-two-name" placeholder="Player 2">
+		</div>
+		<input type="button" class="start-game-button" id="start-game-button" value="Start Game">
+	</section>
+	<div class="fast-money-intro" id="fast-money-intro">
+		<h2>Get Ready for the Fast Money Round!</h2>
+		<p>During the Fast Money Round all point values are multiplied by 5, and you will have 30 seconds to answer as many
+			survey questions as you can. The timer will start as soon as you enter your first answer!</p>
+	</div>
+<script type="text/javascript" src="main.bundle.js"></script></body>
+
 </html>
