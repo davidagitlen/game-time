@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "confetti-js": "0.0.15",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "sass": "^1.22.5"
   }
 }
